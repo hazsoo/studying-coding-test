@@ -109,6 +109,6 @@ class Main {
 ### 정리
 > - 글자 뒤집는 간단한 방법은 StringBuilder의 reverse()사용
 > - String 연산은 다수의 객체가 만들어지는데, 이때 StringBuilder를 쓰면 객체 하나로 연산이 가능하다.
-> - String tmp = s.toString(); 이렇게는 안된다.
-    null일 가능성 있고, 확실히 String으로 변환하고 싶을 땐
+> - String tmp = s.toString(); 이렇게는 안된다.  
+    null일 가능성 있고, 확실히 String으로 변환하고 싶을 땐  
     String.valueOf()를 쓰자
