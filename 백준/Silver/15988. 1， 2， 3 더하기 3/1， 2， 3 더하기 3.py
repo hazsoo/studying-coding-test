@@ -13,4 +13,4 @@ for i in range(1, 1000001):
 t = int(input())
 for _ in range(t):
     n = int(input())
-    print(d[n]%mod)
+    print(d[n])
