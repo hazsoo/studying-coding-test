@@ -1,17 +1,14 @@
 import sys
 input = sys.stdin.readline
 n = int(input())
-tmp = []
+card = []
 for i in range(1,n+1):
-    tmp.append(i)
+    card.append(i)
 
 ans = []
-while 1:
-    if len(tmp) == 1:
-        print(*ans + tmp)
-        break
-    ans.append(tmp[0])
-    tmp.remove(tmp[0])
-    one = tmp[0]
-    tmp.remove(one)
-    tmp.append(one)
+while len(card) != 0:
+    ans.append(card.pop(0))
+    if len(card) != 0:
+        card.append(card.pop(0))
+
+print(*ans)
