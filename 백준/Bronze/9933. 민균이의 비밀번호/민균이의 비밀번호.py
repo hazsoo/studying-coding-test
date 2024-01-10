@@ -1,18 +1,10 @@
 import sys
 input = sys.stdin.readline
 n = int(input())
-word = []
-for _ in range(n):
-    word.append(input().rstrip())
+word = [input().rstrip() for _ in range(n)]
 
-breaker = False
 for i in range(n):
-    for j in range(n):
-        rword = (''.join(reversed(word[i]))).strip()
-        if rword == word[j]:
-            lth = len(word[i])
-            print(lth, word[i][lth//2])
-            breaker = True
-            break
-    if breaker == True:
-        break
+    for j in range(i, n):
+        if word[i][::-1] == word[j]:
+            print(len(word[i]), word[i][len(word[i])//2])
+            exit()
