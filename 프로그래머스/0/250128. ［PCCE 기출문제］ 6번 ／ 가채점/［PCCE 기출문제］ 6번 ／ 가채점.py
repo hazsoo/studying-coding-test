@@ -5,5 +5,5 @@ def solution(numbers, our_score, score_list):
             answer.append("Same")
         else:
             answer.append("Different")
-    
+     
     return answer
