@@ -12,3 +12,4 @@ def solution(s):
     if not stk:
         answer = True
     return answer
+    
