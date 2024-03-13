@@ -1,12 +1,8 @@
 def solution(s):
     st = []
-    for i in range(len(s)):
-        if st and s[i] == st[-1]:
+    for i in s:
+        if st and st[-1] == i:
             st.pop()
-        else:
-            st.append(s[i])
-    
-    if len(st) == 0:
-        return 1
-    else:
-        return 0
+            continue
+        st.append(i)
+    return int(not st)
