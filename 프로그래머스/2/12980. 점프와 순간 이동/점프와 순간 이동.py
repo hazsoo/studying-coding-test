@@ -6,5 +6,5 @@ def solution(n):
         else:
             n //= 2
             answer += 1
-        
+            
     return answer
