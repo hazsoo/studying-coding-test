@@ -8,5 +8,5 @@ def solution(elements):
         for j in range(i+1, i+l):
             e += elements[j%l]
             sum_set.add(e)
-        
+
     return len(sum_set)
