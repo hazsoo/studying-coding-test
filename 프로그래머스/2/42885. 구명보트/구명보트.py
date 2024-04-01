@@ -8,5 +8,5 @@ def solution(people, limit):
             left += 1
         right -= 1
         ans += 1
-    
+
     return ans
