@@ -1,24 +1,20 @@
 class Solution {
     boolean solution(String s) {
-        boolean answer = true;
-
-        int pCnt = 0;
-        int yCnt = 0;
+        s = s.toLowerCase();
+        int cnt = 0;
         
-        String[] arr = s.split("");
-        
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals("p") || arr[i].equals("P")) {
-                pCnt += 1;
-            } else if (arr[i].equals("y") || arr[i].equals("Y")) {
-                yCnt += 1;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'p'){
+                cnt++;
+            } else if (s.charAt(i) == 'y') {
+                cnt--;
             }
         }
         
-        if (pCnt != yCnt) {
-            answer = false;
+        if (cnt == 0) {
+            return true;
+        } else {
+            return false;
         }
-
-        return answer;
     }
 }
