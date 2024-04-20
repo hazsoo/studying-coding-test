@@ -1,6 +1,6 @@
 br = input()
-cnt = 0
 st = []
+cnt = 0
 
 for i in range(len(br)):
     if br[i] == "(":
@@ -12,5 +12,5 @@ for i in range(len(br)):
         else:
             st.pop()
             cnt += 1
-            
+
 print(cnt)
